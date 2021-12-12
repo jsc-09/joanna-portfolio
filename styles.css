@@ -1,3 +1,22 @@
-* {
+* { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #8f546a;
+}
+
+
+h1 {
+    font-size: 200%;
+
+}
+
+h2{ 
+    font-size: 150%;
+
+}
+
+h3 {
+    font-size: 125%
+
 }
