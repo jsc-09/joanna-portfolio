@@ -1,8 +1,9 @@
 * { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
 }
 body {
-    background-color: #8f546a;
+    background-image: url("https://raw.githubusercontent.com/jsc-09/joanna-portfolio/main/images/background/geometric-leaves.png");
 }
 
 
@@ -19,4 +20,13 @@ h2{
 h3 {
     font-size: 125%
 
+}
+
+header {
+    background-image: url("https://raw.githubusercontent.com/jsc-09/joanna-portfolio/main/images/background/geometric-leaves-pink.png");
+    padding: 20px;
+}
+
+ul li {
+    display: inline-block;
 }
