@@ -4,6 +4,8 @@
 }
 body {
     background-image: url("https://raw.githubusercontent.com/jsc-09/joanna-portfolio/main/images/background/geometric-leaves.png");
+    background-repeat:repeat;
+    flex-direction: column;
 }
 
 
@@ -24,9 +26,91 @@ h3 {
 
 header {
     background-image: url("https://raw.githubusercontent.com/jsc-09/joanna-portfolio/main/images/background/geometric-leaves-pink.png");
-    padding: 20px;
+    padding: 2%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+
 }
 
-ul li {
-    display: inline-block;
+nav {
+    display: flex;
+    width: 50%;
+    float: right;
+
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    padding-top: 2%;
+}
+
+/*ABOUT SECTION*/
+
+.bio-img {
+    display: block;
+    width: 25%;
+    text-align: right;
+}
+
+.bio-text {
+    display: block;
+    width: 75%;
+    padding: 0 3% 0 0 ;
+    
+}
+
+img { 
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    background-color: gray;
+    padding: 2%;
+
+}
+
+/*PROJECT*/
+
+.projects {
+    justify-content: center;
+}
+
+.project-card {
+    background-color: thistle;
+    border: solid 3px gray;
+    width: 30%;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
+}
+
+
+#button-arrow::after {
+    content: "→";
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    header, 
+    nav, {
+    flex-direction: column;
+    }
 }
