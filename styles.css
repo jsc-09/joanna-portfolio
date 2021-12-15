@@ -4,7 +4,7 @@
 }
 
 * { 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Lato", Arial, sans-serif;
     margin: 0px;
 }
 body {
@@ -21,26 +21,30 @@ h1 {
 
 h2{ 
     font-size: 150%;
+    color:var(--darkpink)
 
 }
 
 h3 {
     font-size: 125%;
     color: var(--darkpink);
-    font-style: oblique;
+    padding-bottom: 3%;
 }
 
 h4 {
     font-size: 110%;
     padding-top: 10px;
+    color:var(--darkpink)
 
 }
-
 p {
-    padding: 2% 0%;
+    color:var(--darkpink);
+    font-size: 105%;
+    padding-top: 2%;
 }
 
 
+/*how to stretch nav bar to 100% */
 header {
     background-image: url("https://raw.githubusercontent.com/jsc-09/joanna-portfolio/main/images/background/geometric-leaves-pink.png");
     padding: 2%;
@@ -77,6 +81,18 @@ div {
     padding-bottom: 2%;
 }
 
+
+/* how to center background strip and text*/
+.subhead {
+    background-color:var(--darkpink);
+    color: var(--pink);
+    width: 80%;
+}
+
+.subhead h2 {
+    color: var(--pink);
+}
+
 /*ABOUT SECTION*/
 
 .bio-img {
@@ -100,6 +116,18 @@ img {
 
 .about {
     padding: 2%;
+}
+
+.bio-text a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--darkpink);
+}
+
+.bio-text a:hover {
+    color: var(--pink);
+    background-color: var(--darkpink);
+
 }
 
 /*PROJECT*/
@@ -149,14 +177,6 @@ button{
     opacity: 0.4;
 }
 
-.hide {
-    display: none;
-}
-
-.visit:hover + .hide {
-    display: block;
-}
-
 /*CONTACT*/
 
 .contact {
@@ -167,6 +187,18 @@ button{
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+}
+
+.contact-howto a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--darkpink);
+}
+
+.contact-howto a:hover {
+    color: var(--pink);
+    background-color: var(--darkpink);
+
 }
 
 .contact-howto {
@@ -180,9 +212,69 @@ button{
     flex: 0 0 500px;
 }
 
+.contact img {
+    width: 7%;
+    height: 7%;
+    vertical-align: middle;
+}
+
 form {
     justify-content: center;
+    position: relative;
 }
+
+label {
+      /*need some padding above and below label & input*/
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+
+input[type="text"]{
+    font: 15px;  
+    color: var(--darkpink); 
+    width: 100%; 
+    box-sizing: border-box; 
+    letter-spacing: 1px; 
+    padding:2% 0%;
+
+}
+
+input [type="message"] {
+    font: 15px;
+    color: var(--darkpink); 
+    width: 100%; 
+    box-sizing: content-box;
+    padding: 0%;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: content-box;
+    rows="4";
+    columns="10";
+    color: var(--darkpink);
+}
+
+.form-effect {
+    border: 0;
+    padding: 0px 0; 
+    border-bottom: 1px solid var(--pink);
+}
+
+.button-submit {
+    margin: 5% 0 0 0;
+    background-color: var(--darkpink);
+    color: var(--pink);
+    outline: none;
+    padding: 3%;
+    cursor: pointer;
+}
+
+
+
 
 
 footer {
@@ -202,14 +294,14 @@ header {
 }
 
 
-
+/*how to fix sizing for contact section */
 @media screen and (max-width: 375px) {
     header, 
     nav, {
     flex-direction: column;
     }
 
-    .contact-howto {
+    .contact-howto .contact {
         flex: 0 0 300px;
     }
 }
