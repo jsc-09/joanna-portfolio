@@ -1,3 +1,8 @@
+:root {
+    --pink: rgb(230, 209, 209);
+    --darkpink: rgb(72, 62, 62);
+}
+
 * { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
@@ -20,9 +25,20 @@ h2{
 }
 
 h3 {
-    font-size: 125%
+    font-size: 125%;
+    color: var(--darkpink);
+    font-style: oblique;
+}
+
+h4 {
+    font-size: 110%;
 
 }
+
+p {
+    padding: 2% 0%;
+}
+
 
 header {
     background-image: url("https://raw.githubusercontent.com/jsc-09/joanna-portfolio/main/images/background/geometric-leaves-pink.png");
@@ -46,12 +62,18 @@ nav a {
     text-decoration: none;
     text-align: center;
     padding: 10px 20px;
+    color: white;
+}
+
+nav a:hover {
+    color:rgb(72, 62, 62);
 }
 
 div {
     width: 100%;
     display: flex;
     padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 /*ABOUT SECTION*/
@@ -85,16 +107,22 @@ img {
 
 .projects {
     justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .project-card {
-    background-color: thistle;
+    background-color: var(--pink);
     border: solid 3px gray;
-    width: 30%;
+    flex: 0 0 300px;
     text-align: center;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 3%;
     padding: 2%;
+    justify-content: space-evenly;
+}
+
+#project-img {
+    width: 100%;
 }
 
 
@@ -102,9 +130,66 @@ img {
     content: "→";
 }
 
+button{
+    margin: 3% 0 0 0;
+    background-color: var(--darkpink);
+    color: var(--pink);
+    outline: none;
+    padding: 5%;
+}
+
+.grow {
+    transform: all 0.1s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.05);
+}
 
 
+/*CONTACT*/
 
+.contact {
+    width: 100%;
+    padding: 2%;
+    background-color: ;
+    background-color: var(--darkpink);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-howto {
+    width: 40%;
+    padding: 2%;
+    background-color: white;
+    margin: 1%;
+    border: black solid 2px;
+    display: inline-block;
+    justify-content: space-evenly;
+    flex: 0 0 500px;
+}
+
+form {
+    justify-content: center;
+}
+
+
+footer {
+    background-image: url("https://raw.githubusercontent.com/jsc-09/joanna-portfolio/main/images/background/geometric-leaves-pink.png");
+    justify-content: center;
+    padding: 2%;
+    height: 50px;
+    bottom: 0;
+   /* position: fixed;*/
+    width: 100%;
+
+}
+
+/* FOOTER */
+header {
+
+}
 
 
 
@@ -112,5 +197,9 @@ img {
     header, 
     nav, {
     flex-direction: column;
+    }
+
+    .contact-howto {
+        flex: 0 0 300px;
     }
 }
