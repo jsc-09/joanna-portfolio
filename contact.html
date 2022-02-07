@@ -32,34 +32,34 @@
         </nav>
     </header>
 
-    <div class="contact" id="contact">
 
-        <section class="contact-howto">
-            <h3>Contact Me</h3>
-            <p>Email: <a href="#">joanna.s.christian@gmail.com</a></p>
-            <p>Phone: 858.123.4567</p>
-            <p><a href="#"><img src="images/ig-logo.png" alt="instagram logo"></a></p>
-        </section>
-
-        <section class="contact-howto">
-            <h3>Send Me a Message</h3>
+    <section class="contact">
+        <div class="flex flex-row p-4">
+            <div class="basis-1/2 contact-howto">
+                <h3">Contact Me</h3>
+                <p>Email: <a href="#">joanna.s.christian@gmail.com</a></p>
+                <p>Phone: 858.123.4567</p>
+                <div class="flex flex-row p-4">
+                <div class="basis-8"><a href="#"><img src="images/icons/instagram.png" alt="instagram logo"></a></div>
+                <div class="basis-12"><a href="https://github.com/jsc-09" target="_blank"><img src="images/icons/github.png" alt="github logo"></a></div>
+                <div class="basis-12"><a href="https://www.linkedin.com/in/joanna-c-2b57b926/" target="_blank"><img src="images/icons/linkedin.png" alt="github logo"></a></div>
+                </div>
+            </div>
+            <div class="basis-1/2 contact-howto">
+                <h3>Send Me a Message</h3>
             <form action="#">
                 <label for="name">Name</label>
                 <input class="form-effect no-outline" type="text" placeholder="NAME">
-
                 <label for="email">Email</label>
                 <input class="form-effect no-outline" type="text" placeholder="EMAIL">
-
-                <label for="message" value="Say Hello!">Message</label> <textarea class="form-effect no-outline"
-                    placeholder="SAY HELLO!" rows="4" cols="20"></textarea>
-
+                <label for="message" value="Say Hello!">Message</label> 
+                <textarea class="form-effect no-outline" placeholder="SAY HELLO!" rows="4" cols="20"></textarea>
                 <button id="button-arrow" class="button-submit">SUBMIT</button>
-
             </form>
-
-        </section>
-
-    </div>
+            </div>
+        </div>
+    </section>
+  
 
 
 </body>

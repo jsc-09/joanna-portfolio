@@ -202,9 +202,7 @@ button {
     width: 100%;
     padding: 2%;
     background-color: var(--darkpink);
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
+    color: var(--darkpink);
 }
 
 .contact-howto a {
@@ -219,20 +217,19 @@ button {
 }
 
 .contact-howto {
-    width: 40%;
     padding: 2%;
     background-color: white;
     margin: 1%;
     border: black solid 2px;
     display: inline-block;
     justify-content: space-evenly;
-    flex: 0 0 500px;
 }
 
 .contact img {
-    width: 7%;
-    height: 7%;
     vertical-align: middle;
+    width: 32px;
+    height: 32px;
+
 }
 
 form {
